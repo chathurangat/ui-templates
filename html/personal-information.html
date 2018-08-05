@@ -73,6 +73,7 @@
                         <ul class="nav-second-level" aria-expanded="false">
                             <li><a href="personal-information.html">Add New</a></li>
                             <li><a href="#">All Employees</a></li>
+                            <li><a href="#">Transfer</a></li>
                         </ul>
                     </li>
 
@@ -100,7 +101,7 @@
                         <a href="javascript: void(0);"><i class="fi-layers"></i> <span> Performance </span> <span
                                 class="menu-arrow"></span></a>
                         <ul class="nav-second-level" aria-expanded="false">
-                            <li><a href="#">Deciplinary action</a></li>
+                            <li><a href="#">Disciplinary action</a></li>
                             <li><a href="#">Progress</a></li>
                         </ul>
                     </li>
@@ -128,30 +129,19 @@
 
                         <ul class="nav-second-level" aria-expanded="false">
                             <li><a href="#">Salary</a></li>
-                            <li><a href="#">Pety Cash</a></li>
-                        </ul>
-
-                    </li>
-
-
-                    <li>
-                        <a href="javascript: void(0);"><i class="fi-layers"></i> <span> Payroll </span> <span
-                                class="menu-arrow"></span></a>
-
-                        <ul class="nav-second-level" aria-expanded="false">
-                            <li><a href="#">Salary</a></li>
-                            <li><a href="#">Pety Cash</a></li>
-                        </ul>
-
-                    </li>
-
-                    <li>
-                        <a href="javascript: void(0);"><i class="fi-layers"></i> <span> Expenses Management</span> <span
-                                class="menu-arrow"></span></a>
-
-                        <ul class="nav-second-level" aria-expanded="false">
-                            <li><a href="#">Salary</a></li>
                             <li><a href="#">Petty Cash</a></li>
+                        </ul>
+
+                    </li>
+
+
+                    <li>
+                        <a href="javascript: void(0);"><i class="fi-layers"></i> <span>Health</span> <span
+                                class="menu-arrow"></span></a>
+
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="#">Insurance Plan</a></li>
+                            <li><a href="#">Reimbursement</a></li>
                         </ul>
 
                     </li>
@@ -708,28 +698,67 @@
                                                     <form class="form-horizontal" role="form">
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">First Name</label>
+                                                            <label class="col-2 col-form-label">Employee No</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Last Name</label>
+                                                            <label class="col-2 col-form-label">Job Title</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Employment Type</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Joined Date</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Probation Completion</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Nationality</label>
+                                                            <label class="col-2 col-form-label">Contract Ending Date</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Email</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Birth Date</label>
+                                                            <label class="col-2 col-form-label">Mobile</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Telephone (Office)</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
@@ -745,9 +774,72 @@
                                                     </form>
                                                 </div>
                                             </div>
-
                                         </div>
                                         <!-- end row -->
+
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card-box">
+                                                    <h4 class="m-t-0 header-title">Supervisors</h4>
+                                                    <p class="text-muted font-14 m-b-20">
+                                                        the employee should report to following persons in direct or indirect for the official works.
+
+                                                    </p>
+
+                                                    <table class="table">
+                                                        <thead class="thead-light">
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>First Name</th>
+                                                            <th>Last Name</th>
+                                                            <th>Reporting Type</th>
+                                                            <th>Designation</th>
+                                                            <th>Mobile</th>
+                                                            <th>Email</th>
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <th scope="row">1</th>
+                                                            <td>Mark</td>
+                                                            <td>Otto</td>
+                                                            <td>@mdo</td>
+                                                            <td>@mdo</td>
+                                                            <td>@mdo</td>
+                                                            <td>@mdo</td>
+                                                            <td>Edit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">2</th>
+                                                            <td>Jacob</td>
+                                                            <td>Thornton</td>
+                                                            <td>@fat</td>
+                                                            <td>@fat</td>
+                                                            <td>@fat</td>
+                                                            <td>@fat</td>
+                                                            <td>Edit</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3</th>
+                                                            <td>Larry</td>
+                                                            <td>the Bird</td>
+                                                            <td>@twitter</td>
+                                                            <td>@twitter</td>
+                                                            <td>@twitter</td>
+                                                            <td>@twitter</td>
+                                                            <td>Edit</td>
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
 
                                     </div> <!-- end card-box -->
                                 </div>
