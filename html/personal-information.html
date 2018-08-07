@@ -63,7 +63,8 @@
 
                     <li>
                         <a href="javascript: void(0);">
-                            <i class="fi-air-play"></i><span class="badge badge-danger badge-pill pull-right">New</span> <span> Home </span>
+                            <i class="fi-air-play"></i><span class="badge badge-danger badge-pill pull-right">New</span>
+                            <span> Home </span>
                         </a>
                     </li>
 
@@ -408,40 +409,47 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#employement-details" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                    <a href="#employement-details" data-toggle="tab" aria-expanded="false"
+                                       class="nav-link">
                                         <i class="fi-head mr-2"></i>Employment Details
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#educational-details" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                    <a href="#educational-details" data-toggle="tab" aria-expanded="false"
+                                       class="nav-link">
                                         <i class="fi-head mr-2"></i>Education
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#work-experience-details" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                    <a href="#work-experience-details" data-toggle="tab" aria-expanded="false"
+                                       class="nav-link">
                                         <i class="fi-mail mr-2"></i>Work Experiences
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#skills-expertise-details" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                    <a href="#skills-expertise-details" data-toggle="tab" aria-expanded="false"
+                                       class="nav-link">
                                         <i class="fi-cog mr-2"></i>Skills
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#language-proficiency-details" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                    <a href="#language-proficiency-details" data-toggle="tab" aria-expanded="false"
+                                       class="nav-link">
                                         <i class="fi-cog mr-2"></i>Languages
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#dependecny-details" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                    <a href="#dependecny-details" data-toggle="tab" aria-expanded="false"
+                                       class="nav-link">
                                         <i class="fi-cog mr-2"></i>Dependent Details
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a href="#emergency-contact-details" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                    <a href="#emergency-contact-details" data-toggle="tab" aria-expanded="false"
+                                       class="nav-link">
                                         <i class="fi-cog mr-2"></i>Emergency Contact
                                     </a>
                                 </li>
@@ -728,21 +736,24 @@
 
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Probation Ending On</label>
+                                                            <label class="col-2 col-form-label">Probation Ending
+                                                                On</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Date of Confirmation</label>
+                                                            <label class="col-2 col-form-label">Date of
+                                                                Confirmation</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Contract Ending Date</label>
+                                                            <label class="col-2 col-form-label">Contract Ending
+                                                                Date</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
@@ -792,39 +803,189 @@
                                 <!--start educational details-->
                                 <div class="tab-pane" id="educational-details">
                                     <div class="card-box">
+
+                                        <div class="row">
+                                            <div class="form-group text-center m-b-0" style="padding: 30px;">
+                                                <button class="btn btn-custom waves-effect waves-light"
+                                                        type="button">
+                                                    Add New
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-12">
+                                                <div class="card-box table-responsive">
+                                                    <h4 class="m-t-0 header-title">All Qualifications</h4>
+                                                    <p class="text-muted font-14 m-b-30">
+                                                        find the lisst of qualifications
+                                                    </p>
+
+                                                    <table id="datatable-buttons"
+                                                           class="table table-striped table-bordered" cellspacing="0"
+                                                           width="100%">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Position</th>
+                                                            <th>Office</th>
+                                                            <th>Age</th>
+                                                            <th>Start date</th>
+                                                            <th>Salary</th>
+                                                        </tr>
+                                                        </thead>
+
+
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>Tiger Nixon</td>
+                                                            <td>System Architect</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>61</td>
+                                                            <td>2011/04/25</td>
+                                                            <td>
+                                                                <div class="btn-group dropdown">
+                                                                    <a href="javascript: void(0);"
+                                                                       class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-sm"
+                                                                       data-toggle="dropdown" aria-expanded="false">Click
+                                                                        Here</i></a>
+                                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-pencil mr-2 text-muted font-18 vertical-middle"></i>Edit
+                                                                            Ticket</a>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-check-all mr-2 text-muted font-18 vertical-middle"></i>Close</a>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-delete mr-2 text-muted font-18 vertical-middle"></i>Remove</a>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-star mr-2 font-18 text-muted vertical-middle"></i>Mark
+                                                                            as Unread</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Garrett Winters</td>
+                                                            <td>Accountant</td>
+                                                            <td>Tokyo</td>
+                                                            <td>63</td>
+                                                            <td>2011/07/25</td>
+                                                            <td>$170,750</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ashton Cox</td>
+                                                            <td>Junior Technical Author</td>
+                                                            <td>San Francisco</td>
+                                                            <td>66</td>
+                                                            <td>2009/01/12</td>
+                                                            <td>$86,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cedric Kelly</td>
+                                                            <td>Senior Javascript Developer</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>22</td>
+                                                            <td>2012/03/29</td>
+                                                            <td>$433,060</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+
+
+                                                    <nav aria-label="Page navigation example">
+                                                        <ul class="pagination justify-content-end">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">1</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">2</a>
+                                                            </li>
+                                                            <li class="page-item"><a class="page-link" href="#">3</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a class="page-link" href="#">Next</a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end row -->
+
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="p-20">
                                                     <form class="form-horizontal" role="form">
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">First Name</label>
+                                                            <label class="col-2 col-form-label">Title</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Last Name</label>
+                                                            <label class="col-2 col-form-label">Qualification
+                                                                Type</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Nationality</label>
+                                                            <label class="col-2 col-form-label">Awarded
+                                                                Institute</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Birth Date</label>
+                                                            <label class="col-2 col-form-label">Institute
+                                                                Website</label>
                                                             <div class="col-10">
                                                                 <input type="text" class="form-control">
                                                             </div>
                                                         </div>
 
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Awarded Country</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Mode of
+                                                                Education</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Special Note</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Started Date</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Completion Date</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
 
                                                         <div class="form-group text-center m-b-0">
                                                             <button class="btn btn-custom waves-effect waves-light"
