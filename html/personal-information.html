@@ -821,7 +821,7 @@
                                                 <div class="card-box table-responsive">
                                                     <h4 class="m-t-0 header-title">All Qualifications</h4>
                                                     <p class="text-muted font-14 m-b-30">
-                                                        find the lisst of qualifications
+                                                        Chahturanga Tennakoon's list of qualifications
                                                     </p>
 
                                                     <table id="datatable-buttons"
@@ -1040,49 +1040,51 @@
                                         </div>
                                         <!-- end row -->
 
-                                        
 
-                                            <div class="row">
+                                        <div class="row">
 
-                                                <div class="alert alert-info"><strong>Important!</strong>
-                                                    You can upload only two supporting documents. Only JPG,
-                                                    JPEG, PNG, GIF or PDF files are allowed.
-                                                </div>
+                                            <div class="alert alert-info"><strong>Important!</strong>
+                                                You can upload only two supporting documents. Only JPG,
+                                                JPEG, PNG, GIF or PDF files are allowed.
                                             </div>
+                                        </div>
 
 
                                         <div class="row">
 
                                             <div class="col-lg-6">
                                                 <div class="card-box">
-                                                    <h4 class="header-title m-t-0">Date Range Picker</h4>
+                                                    <h4 class="header-title m-t-0">Add New Qualification</h4>
                                                     <p class="text-muted font-14 m-b-25">
-                                                        A JavaScript component for choosing date ranges.
-                                                        Designed to work with the Bootstrap CSS framework.
+                                                        adding / updating qualifications
                                                     </p>
+
 
                                                     <form>
                                                         <div class="form-group m-b-20">
-                                                            <label>With all options</label>
-                                                            <input type="text" id="reportrange" class="form-control">
+                                                            <label>Qualification Title</label>
+                                                            <input type="text"  class="form-control">
+                                                            <small class="form-text text-muted">
+                                                                e.g:- B.Sc (Hons) Accounting
+                                                            </small>
                                                         </div>
                                                         <div class="form-group m-b-20">
-                                                            <label>Date Range Pick</label>
-                                                            <div>
-                                                                <input class="form-control input-daterange-datepicker" type="text" name="daterange" value="01/01/2017 - 01/31/2018">
-                                                            </div>
+                                                            <label>Qualification Type</label>
+                                                            <input type="text" class="form-control">
                                                         </div>
                                                         <div class="form-group m-b-20">
-                                                            <label>Date Range With Time</label>
-                                                            <div>
-                                                                <input type="text" class="form-control input-daterange-timepicker" name="daterange" value="01/01/2017 1:30 PM - 01/01/2017 2:00 PM">
-                                                            </div>
+                                                            <label>Awarded Body</label>
+                                                            <input type="text"  class="form-control">
+                                                            <small class="form-text text-muted">
+                                                                e.g:- the University of Greenwich
+                                                            </small>
                                                         </div>
-                                                        <div class="form-group m-b-0">
-                                                            <label>Limit Selectable Dates</label>
-                                                            <div>
-                                                                <input class="form-control input-limit-datepicker" type="text" name="daterange" value="06/01/2017 - 06/07/2017">
-                                                            </div>
+                                                        <div class="form-group m-b-20">
+                                                            <label>Awarded Country</label>
+                                                            <input type="text" class="form-control">
+                                                            <small class="form-text text-muted">
+                                                                e.g:- Sri Lanka
+                                                            </small>
                                                         </div>
                                                     </form>
                                                 </div> <!-- end card-box -->
@@ -1092,89 +1094,92 @@
                                             <div class="col-lg-6">
 
                                                 <div class="card-box">
-                                                    <h4 class="header-title">Clock Picker</h4>
-                                                    <p class="text-muted font-14">
-                                                        A clock-style timepicker for Bootstrap (or jQuery).
-                                                    </p>
-                                                    <div class="form-group">
-                                                        <label>Default Clock Picker</label>
-                                                        <div class="input-group clockpicker">
-                                                            <input type="text" class="form-control" value="09:30">
-                                                            <div class="input-group-append">
-                                                                <span class="input-group-text"><i class="mdi mdi-clock"></i></span>
-                                                            </div>
-                                                        </div>
+                                                    <!--<h4 class="header-title">Clock Picker</h4>-->
+                                                    <!--<p class="text-muted font-14">-->
+                                                        <!--A clock-style timepicker for Bootstrap (or jQuery).-->
+                                                    <!--</p>-->
+                                                    <div class="form-group m-b-20">
+                                                        <label>Website</label>
+                                                        <input type="text" class="form-control">
+                                                        <small class="form-text text-muted">
+                                                            e.g:- www.gre.ac.uk
+                                                        </small>
                                                     </div>
 
-                                                    <div class="form-group">
-                                                        <label>Auto close</label>
-                                                        <div class="input-group clockpicker" data-placement="top" data-align="top" data-autoclose="true">
-                                                            <input type="text" class="form-control" value="13:14">
-                                                            <div class="input-group-append">
-                                                                <span class="input-group-text"><i class="mdi mdi-clock"></i></span>
-                                                            </div>
-                                                        </div>
+                                                    <div class="form-group m-b-20">
+                                                        <label>Mode of Study</label>
+                                                        <input type="text" class="form-control">
                                                     </div>
 
-                                                    <div class="form-group">
-                                                        <label>Now time</label>
-                                                        <div class="input-group clockpicker">
-                                                            <input class="form-control" id="single-input" type="text" value="" placeholder="Now">
-                                                            <div class="input-group-append">
-                                                                <button type="button" id="check-minutes" class="btn waves-effect waves-light btn-primary">Check the minutes</button>
-                                                            </div>
-                                                        </div>
+                                                    <div class="form-group m-b-20">
+                                                        <label>Started Date</label>
+                                                        <input type="text" class="form-control">
                                                     </div>
 
-                                                    <div class="form-group">
-                                                        <label>Place at left, align the arrow to top </label>
-
-                                                        <div class="input-group clockpicker" data-placement="top" data-align="top">
-                                                            <input type="text" class="form-control" value="13:14">
-                                                            <div class="input-group-append">
-                                                                <span class="input-group-text"><i class="mdi mdi-clock"></i></span>
-                                                            </div>
-                                                        </div>
-
+                                                    <div class="form-group m-b-20">
+                                                        <label>Completed Date</label>
+                                                        <input type="text" class="form-control">
                                                     </div>
+
+                                                    <div class="form-group m-b-20">
+                                                        <label>Special Note</label>
+                                                        <!--<input type="text" class="form-control">-->
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+
+                                                    <!--<div class="col-10">-->
+                                                        <!--<textarea class="form-control" rows="5"></textarea>-->
+                                                    <!--</div>-->
+
                                                 </div> <!-- card-box -->
 
                                             </div> <!-- end col -->
 
-                                        </div>
-
-                                        </div> <!-- end card-box -->
+                                        </div> <!-- wnd of row -->
+                                        
+                                    </div> <!-- end card-box -->
 
 
                                     <div class="card-box">
-                                        <button type="button" class="btn btn-custom btn-rounded w-md waves-effect waves-light pull-right"><i class="mdi mdi-upload"></i> Upload Files</button>
+                                        <button type="button"
+                                                class="btn btn-custom btn-rounded w-md waves-effect waves-light pull-right">
+                                            <i class="mdi mdi-upload"></i> Upload Files
+                                        </button>
                                         <h4 class="header-title m-b-30">My Files</h4>
 
                                         <div class="row">
                                             <div class="col-lg-3 col-xl-2">
                                                 <div class="file-man-box">
-                                                    <a href="" class="file-close"><i class="mdi mdi-close-circle"></i></a>
+                                                    <a href="" class="file-close"><i
+                                                            class="mdi mdi-close-circle"></i></a>
                                                     <div class="file-img-box">
                                                         <img src="assets/images/file_icons/pdf.svg" alt="icon">
                                                     </div>
-                                                    <a href="#" class="file-download"><i class="mdi mdi-download"></i> </a>
+                                                    <a href="#" class="file-download"><i class="mdi mdi-download"></i>
+                                                    </a>
                                                     <div class="file-man-title">
                                                         <h5 class="mb-0 text-overflow">invoice_project.pdf</h5>
-                                                        <p class="mb-0"><small>568.8 kb</small></p>
+                                                        <p class="mb-0">
+                                                            <small>568.8 kb</small>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-3 col-xl-2">
                                                 <div class="file-man-box">
-                                                    <a href="" class="file-close"><i class="mdi mdi-close-circle"></i></a>
+                                                    <a href="" class="file-close"><i
+                                                            class="mdi mdi-close-circle"></i></a>
                                                     <div class="file-img-box">
                                                         <img src="assets/images/file_icons/bmp.svg" alt="icon">
                                                     </div>
-                                                    <a href="#" class="file-download"><i class="mdi mdi-download"></i> </a>
+                                                    <a href="#" class="file-download"><i class="mdi mdi-download"></i>
+                                                    </a>
                                                     <div class="file-man-title">
                                                         <h5 class="mb-0 text-overflow">Bmpfile.bmp</h5>
-                                                        <p class="mb-0"><small>845.8 mb</small></p>
+                                                        <p class="mb-0">
+                                                            <small>845.8 mb</small>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1182,321 +1187,324 @@
                                         </div>
 
                                         <div class="text-center mt-3">
-                                            <button type="button" class="btn btn-outline-danger w-md waves-effect waves-light"><i class="mdi mdi-refresh"></i> Load More Files</button>
+                                            <button type="button"
+                                                    class="btn btn-outline-danger w-md waves-effect waves-light"><i
+                                                    class="mdi mdi-refresh"></i> Load More Files
+                                            </button>
                                         </div>
 
                                     </div>
 
 
-                                    </div>
-                                    <!--end educational details-->
-
-
-                                    <!--start work experience details-->
-                                    <div class="tab-pane" id="work-experience-details">
-                                        <div class="card-box">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="p-20">
-                                                        <form class="form-horizontal" role="form">
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">First Name</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Last Name</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Nationality</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Birth Date</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-
-                                                            <div class="form-group text-center m-b-0">
-                                                                <button class="btn btn-custom waves-effect waves-light"
-                                                                        type="submit">
-                                                                    Save
-                                                                </button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <!-- end row -->
-
-                                        </div> <!-- end card-box -->
-                                    </div>
-                                    <!--end work experience details-->
-
-
-                                    <!--start skills and expertise details-->
-                                    <div class="tab-pane" id="skills-expertise-details">
-                                        <div class="card-box">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="p-20">
-                                                        <form class="form-horizontal" role="form">
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">First Name</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Last Name</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Nationality</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Birth Date</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-
-                                                            <div class="form-group text-center m-b-0">
-                                                                <button class="btn btn-custom waves-effect waves-light"
-                                                                        type="submit">
-                                                                    Save
-                                                                </button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <!-- end row -->
-
-                                        </div> <!-- end card-box -->
-                                    </div>
-                                    <!--end skills and expertise details-->
-
-
-                                    <!--start language proficiency details-->
-                                    <div class="tab-pane" id="language-proficiency-details">
-                                        <div class="card-box">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="p-20">
-                                                        <form role="form">
-                                                            <div class="form-group">
-                                                                <label for="exampleInputEmail1">Email address</label>
-                                                                <input type="email" class="form-control"
-                                                                       id="exampleInputEmail1"
-                                                                       aria-describedby="emailHelp"
-                                                                       placeholder="Enter email">
-                                                                <small id="emailHelp" class="form-text text-muted">We'll
-                                                                    never share your email with anyone else.
-                                                                </small>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="exampleInputPassword1">Password</label>
-                                                                <input type="password" class="form-control"
-                                                                       id="exampleInputPassword1"
-                                                                       placeholder="Password">
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <div class="checkbox">
-                                                                    <input id="checkbox0" type="checkbox">
-                                                                    <label for="checkbox0">
-                                                                        Check me out
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                            <button type="submit" class="btn btn-primary">Submit
-                                                            </button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <!-- end row -->
-
-                                        </div> <!-- end card-box -->
-                                    </div>
-                                    <!--end language proficiency details-->
-
-
-                                    <!--start dependency details-->
-                                    <div class="tab-pane" id="dependecny-details">
-                                        <div class="card-box">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="p-20">
-                                                        <form class="form-horizontal" role="form">
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">First Name</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Last Name</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Nationality</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Birth Date</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-
-                                                            <div class="form-group text-center m-b-0">
-                                                                <button class="btn btn-custom waves-effect waves-light"
-                                                                        type="submit">
-                                                                    Save
-                                                                </button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <!-- end row -->
-
-                                        </div> <!-- end card-box -->
-                                    </div>
-                                    <!--end dependency details-->
-
-
-                                    <!--start emergency details-->
-                                    <div class="tab-pane" id="emergency-contact-details">
-                                        <div class="card-box">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="p-20">
-                                                        <form class="form-horizontal" role="form">
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">First Name</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Last Name</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Nationality</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group row">
-                                                                <label class="col-2 col-form-label">Birth Date</label>
-                                                                <div class="col-10">
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-                                                            </div>
-
-
-                                                            <div class="form-group text-center m-b-0">
-                                                                <button class="btn btn-custom waves-effect waves-light"
-                                                                        type="submit">
-                                                                    Save
-                                                                </button>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <!-- end row -->
-
-                                        </div> <!-- end card-box -->
-                                    </div>
-                                    <!--end emergency details-->
-
-
                                 </div>
+                                <!--end educational details-->
+
+
+                                <!--start work experience details-->
+                                <div class="tab-pane" id="work-experience-details">
+                                    <div class="card-box">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="p-20">
+                                                    <form class="form-horizontal" role="form">
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">First Name</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Last Name</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Nationality</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Birth Date</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group text-center m-b-0">
+                                                            <button class="btn btn-custom waves-effect waves-light"
+                                                                    type="submit">
+                                                                Save
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- end row -->
+
+                                    </div> <!-- end card-box -->
+                                </div>
+                                <!--end work experience details-->
+
+
+                                <!--start skills and expertise details-->
+                                <div class="tab-pane" id="skills-expertise-details">
+                                    <div class="card-box">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="p-20">
+                                                    <form class="form-horizontal" role="form">
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">First Name</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Last Name</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Nationality</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Birth Date</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group text-center m-b-0">
+                                                            <button class="btn btn-custom waves-effect waves-light"
+                                                                    type="submit">
+                                                                Save
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- end row -->
+
+                                    </div> <!-- end card-box -->
+                                </div>
+                                <!--end skills and expertise details-->
+
+
+                                <!--start language proficiency details-->
+                                <div class="tab-pane" id="language-proficiency-details">
+                                    <div class="card-box">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="p-20">
+                                                    <form role="form">
+                                                        <div class="form-group">
+                                                            <label for="exampleInputEmail1">Email address</label>
+                                                            <input type="email" class="form-control"
+                                                                   id="exampleInputEmail1"
+                                                                   aria-describedby="emailHelp"
+                                                                   placeholder="Enter email">
+                                                            <small id="emailHelp" class="form-text text-muted">We'll
+                                                                never share your email with anyone else.
+                                                            </small>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="exampleInputPassword1">Password</label>
+                                                            <input type="password" class="form-control"
+                                                                   id="exampleInputPassword1"
+                                                                   placeholder="Password">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <div class="checkbox">
+                                                                <input id="checkbox0" type="checkbox">
+                                                                <label for="checkbox0">
+                                                                    Check me out
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-primary">Submit
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- end row -->
+
+                                    </div> <!-- end card-box -->
+                                </div>
+                                <!--end language proficiency details-->
+
+
+                                <!--start dependency details-->
+                                <div class="tab-pane" id="dependecny-details">
+                                    <div class="card-box">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="p-20">
+                                                    <form class="form-horizontal" role="form">
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">First Name</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Last Name</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Nationality</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Birth Date</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group text-center m-b-0">
+                                                            <button class="btn btn-custom waves-effect waves-light"
+                                                                    type="submit">
+                                                                Save
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- end row -->
+
+                                    </div> <!-- end card-box -->
+                                </div>
+                                <!--end dependency details-->
+
+
+                                <!--start emergency details-->
+                                <div class="tab-pane" id="emergency-contact-details">
+                                    <div class="card-box">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="p-20">
+                                                    <form class="form-horizontal" role="form">
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">First Name</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Last Name</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Nationality</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group row">
+                                                            <label class="col-2 col-form-label">Birth Date</label>
+                                                            <div class="col-10">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group text-center m-b-0">
+                                                            <button class="btn btn-custom waves-effect waves-light"
+                                                                    type="submit">
+                                                                Save
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- end row -->
+
+                                    </div> <!-- end card-box -->
+                                </div>
+                                <!--end emergency details-->
+
+
                             </div>
-                        </div> <!-- end col -->
+                        </div>
+                    </div> <!-- end col -->
 
 
-                    </div>
-                    <!-- end row -->
+                </div>
+                <!-- end row -->
 
 
-                </div> <!-- container -->
+            </div> <!-- container -->
 
-            </div> <!-- content -->
+        </div> <!-- content -->
 
-            <footer class="footer text-right">
-                2018 © People's Human Resource Manager. - PeoplesHRM.com
-            </footer>
-
-        </div>
-
-
-        <!-- ============================================================== -->
-        <!-- End Right content here -->
-        <!-- ============================================================== -->
-
+        <footer class="footer text-right">
+            2018 © People's Human Resource Manager. - PeoplesHRM.com
+        </footer>
 
     </div>
-    <!-- END wrapper -->
 
 
-    <!-- jQuery  -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/metisMenu.min.js"></script>
-    <script src="assets/js/waves.js"></script>
-    <script src="assets/js/jquery.slimscroll.js"></script>
+    <!-- ============================================================== -->
+    <!-- End Right content here -->
+    <!-- ============================================================== -->
 
-    <!-- App js -->
-    <script src="assets/js/jquery.core.js"></script>
-    <script src="assets/js/jquery.app.js"></script>
+
+</div>
+<!-- END wrapper -->
+
+
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/metisMenu.min.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+
+<!-- App js -->
+<script src="assets/js/jquery.core.js"></script>
+<script src="assets/js/jquery.app.js"></script>
 
 </body>
 </html>
