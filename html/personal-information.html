@@ -419,7 +419,7 @@
                                 <li class="nav-item">
                                     <a href="#work-experience-details" data-toggle="tab" aria-expanded="false"
                                        class="nav-link">
-                                        <i class="fi-mail mr-2"></i>Work Experiences
+                                        <i class="fi-mail mr-2"></i>Work History
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -445,7 +445,7 @@
                                 <li class="nav-item">
                                     <a href="#dependecny-details" data-toggle="tab" aria-expanded="false"
                                        class="nav-link">
-                                        <i class="fi-cog mr-2"></i>Dependent Details
+                                        <i class="fi-cog mr-2"></i>Dependents
                                     </a>
                                 </li>
 
@@ -1050,7 +1050,144 @@
                                                 </div>
                                             </div>
 
+
+                                        <div class="row">
+
+                                            <div class="col-lg-6">
+                                                <div class="card-box">
+                                                    <h4 class="header-title m-t-0">Date Range Picker</h4>
+                                                    <p class="text-muted font-14 m-b-25">
+                                                        A JavaScript component for choosing date ranges.
+                                                        Designed to work with the Bootstrap CSS framework.
+                                                    </p>
+
+                                                    <form>
+                                                        <div class="form-group m-b-20">
+                                                            <label>With all options</label>
+                                                            <input type="text" id="reportrange" class="form-control">
+                                                        </div>
+                                                        <div class="form-group m-b-20">
+                                                            <label>Date Range Pick</label>
+                                                            <div>
+                                                                <input class="form-control input-daterange-datepicker" type="text" name="daterange" value="01/01/2017 - 01/31/2018">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group m-b-20">
+                                                            <label>Date Range With Time</label>
+                                                            <div>
+                                                                <input type="text" class="form-control input-daterange-timepicker" name="daterange" value="01/01/2017 1:30 PM - 01/01/2017 2:00 PM">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group m-b-0">
+                                                            <label>Limit Selectable Dates</label>
+                                                            <div>
+                                                                <input class="form-control input-limit-datepicker" type="text" name="daterange" value="06/01/2017 - 06/07/2017">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div> <!-- end card-box -->
+                                            </div>
+                                            <!-- end col -->
+
+                                            <div class="col-lg-6">
+
+                                                <div class="card-box">
+                                                    <h4 class="header-title">Clock Picker</h4>
+                                                    <p class="text-muted font-14">
+                                                        A clock-style timepicker for Bootstrap (or jQuery).
+                                                    </p>
+                                                    <div class="form-group">
+                                                        <label>Default Clock Picker</label>
+                                                        <div class="input-group clockpicker">
+                                                            <input type="text" class="form-control" value="09:30">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text"><i class="mdi mdi-clock"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Auto close</label>
+                                                        <div class="input-group clockpicker" data-placement="top" data-align="top" data-autoclose="true">
+                                                            <input type="text" class="form-control" value="13:14">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text"><i class="mdi mdi-clock"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Now time</label>
+                                                        <div class="input-group clockpicker">
+                                                            <input class="form-control" id="single-input" type="text" value="" placeholder="Now">
+                                                            <div class="input-group-append">
+                                                                <button type="button" id="check-minutes" class="btn waves-effect waves-light btn-primary">Check the minutes</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label>Place at left, align the arrow to top </label>
+
+                                                        <div class="input-group clockpicker" data-placement="top" data-align="top">
+                                                            <input type="text" class="form-control" value="13:14">
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text"><i class="mdi mdi-clock"></i></span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div> <!-- card-box -->
+
+                                            </div> <!-- end col -->
+
+                                        </div>
+
                                         </div> <!-- end card-box -->
+
+
+                                    <div class="card-box">
+                                        <button type="button" class="btn btn-custom btn-rounded w-md waves-effect waves-light pull-right"><i class="mdi mdi-upload"></i> Upload Files</button>
+                                        <h4 class="header-title m-b-30">My Files</h4>
+
+                                        <div class="row">
+                                            <div class="col-lg-3 col-xl-2">
+                                                <div class="file-man-box">
+                                                    <a href="" class="file-close"><i class="mdi mdi-close-circle"></i></a>
+                                                    <div class="file-img-box">
+                                                        <img src="assets/images/file_icons/pdf.svg" alt="icon">
+                                                    </div>
+                                                    <a href="#" class="file-download"><i class="mdi mdi-download"></i> </a>
+                                                    <div class="file-man-title">
+                                                        <h5 class="mb-0 text-overflow">invoice_project.pdf</h5>
+                                                        <p class="mb-0"><small>568.8 kb</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 col-xl-2">
+                                                <div class="file-man-box">
+                                                    <a href="" class="file-close"><i class="mdi mdi-close-circle"></i></a>
+                                                    <div class="file-img-box">
+                                                        <img src="assets/images/file_icons/bmp.svg" alt="icon">
+                                                    </div>
+                                                    <a href="#" class="file-download"><i class="mdi mdi-download"></i> </a>
+                                                    <div class="file-man-title">
+                                                        <h5 class="mb-0 text-overflow">Bmpfile.bmp</h5>
+                                                        <p class="mb-0"><small>845.8 mb</small></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="text-center mt-3">
+                                            <button type="button" class="btn btn-outline-danger w-md waves-effect waves-light"><i class="mdi mdi-refresh"></i> Load More Files</button>
+                                        </div>
+
+                                    </div>
+
+
                                     </div>
                                     <!--end educational details-->
 
