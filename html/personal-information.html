@@ -17,7 +17,7 @@
     <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css"/>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
     <link href="../plugins/bootstrap-fileupload/bootstrap-fileupload.css" rel="stylesheet"/>
-
+    <link href="../plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet" />
 
     <script src="assets/js/modernizr.min.js"></script>
 
@@ -1317,55 +1317,40 @@
 
                                 <!--start skills and expertise details-->
                                 <div class="tab-pane" id="skills-expertise-details">
-                                    <div class="card-box">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="p-20">
-                                                    <form class="form-horizontal" role="form">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="card-box">
+                                                <h4 class="header-title m-t-0 m-b-20">Tags Input</h4>
 
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">First Name</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
+                                                <p class="mb-1 mt-4 font-weight-bold text-muted">Input Tags</p>
+                                                <p class="text-muted font-14">
+                                                    Just add <code>data-role="tagsinput"</code> to your input field to automatically change it to a tags input field.
+                                                </p>
+                                                <div class="tags-default">
+                                                    <input type="text" value="Amsterdam,Washington,Sydney" data-role="tagsinput" placeholder="Add Skill"/>
+                                                </div>
 
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Last Name</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Nationality</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Birth Date</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-
-
-                                                        <div class="form-group text-center m-b-0">
-                                                            <button class="btn btn-custom waves-effect waves-light"
-                                                                    type="submit">
-                                                                Save
-                                                            </button>
-                                                        </div>
-                                                    </form>
+                                                <p class="mb-1 mt-4 font-weight-bold text-muted">True multi value</p>
+                                                <p class="text-muted font-14">
+                                                    Use a <code>&lt;select multiple /&gt;</code> as your input element for a tags input, to gain true multivalue support.
+                                                    Instead of a comma separated string, the values will be set in an array. Existing <code>&lt;option /&gt;</code>
+                                                    elements will automatically be set as tags. This makes it also possible to create tags containing a comma.
+                                                </p>
+                                                <div class="m-b-0">
+                                                    <select multiple data-role="tagsinput">
+                                                        <option value="Amsterdam">Amsterdam</option>
+                                                        <option value="Washington">Washington</option>
+                                                        <option value="Sydney">Sydney</option>
+                                                        <option value="Beijing">Beijing</option>
+                                                        <option value="Cairo">Cairo</option>
+                                                    </select>
                                                 </div>
                                             </div>
 
                                         </div>
-                                        <!-- end row -->
 
-                                    </div> <!-- end card-box -->
+                                    </div><!-- end row -->
+
                                 </div>
                                 <!--end skills and expertise details-->
 
@@ -1561,6 +1546,8 @@
 <script src="assets/js/metisMenu.min.js"></script>
 <script src="assets/js/waves.js"></script>
 <script src="assets/js/jquery.slimscroll.js"></script>
+<script src="../plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
+
 
 <!-- App js -->
 <script src="assets/js/jquery.core.js"></script>
