@@ -806,14 +806,14 @@
                                 <div class="tab-pane" id="educational-details">
                                     <div class="card-box">
 
-                                        <div class="row">
-                                            <div class="form-group text-center m-b-0">
-                                                <button class="btn btn-primary waves-effect waves-light"
-                                                        type="button">
-                                                    Add New
-                                                </button>
-                                            </div>
-                                        </div>
+                                        <!--<div class="row">-->
+                                            <!--<div class="form-group text-center m-b-0">-->
+                                                <!--<button class="btn btn-primary waves-effect waves-light"-->
+                                                        <!--type="button">-->
+                                                    <!--Add New-->
+                                                <!--</button>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
 
                                         <div class="row">
 
@@ -898,10 +898,259 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!--end row-->
+
+                                        <div class="row">
+                                            <div class="form-group text-center m-b-0">
+                                                <button class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#signup-modal"
+                                                        type="button">
+                                                    <i class="mdi mdi-plus"></i>
+                                                    Add New Category
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="card-box">
+                                                    <h4 class="m-t-0 header-title">Add New Qualification</h4>
+                                                    <p class="text-muted m-b-30 font-13">
+                                                        You may also swap <code class="highlighter-rouge">.row</code> for
+                                                        <code class="highlighter-rouge">.form-row</code>, a variation of our
+                                                        standard grid row that overrides the default column gutters for
+                                                        tighter and more compact layouts.
+                                                    </p>
+
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputEmail4"
+                                                                       class="col-form-label">Name</label>
+                                                                <input type="email" class="form-control" id="inputEmail4"
+                                                                       placeholder="Email">
+                                                                <small class="form-text text-muted">
+                                                                    e.g:- B.Sc (Hons) Accounting
+                                                                </small>
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPassword4"
+                                                                       class="col-form-label">Type</label>
+                                                                <input type="password" class="form-control"
+                                                                       id="inputPassword4" placeholder="Password">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="inputAddress" class="col-form-label">Awarded
+                                                                Body / Institute</label>
+                                                            <input type="text" class="form-control" id="inputAddress"
+                                                                   placeholder="1234 Main St">
+                                                            <small class="form-text text-muted">
+                                                                e.g:- the University of Greenwich
+                                                            </small>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputEmail4"
+                                                                       class="col-form-label">Country</label>
+                                                                <input type="email" class="form-control"
+                                                                       placeholder="Email">
+
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputPassword4"
+                                                                       class="col-form-label">Website</label>
+                                                                <input type="password" class="form-control"
+                                                                       placeholder="Password">
+                                                                <small class="form-text text-muted">
+                                                                    e.g:- www.gre.ac.uk
+                                                                </small>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputCity" class="col-form-label">Started Date</label>
+                                                                <input type="text" class="form-control" id="inputCity">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label for="inputState" class="col-form-label">Completed Date</label>
+                                                                <select id="inputState" class="form-control">Choose</select>
+                                                            </div>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-primary">Save</button>
+                                                        <button type="button"
+                                                                class="btn btn-custom w-md waves-effect waves-light">
+                                                            <i class="mdi mdi-upload"></i> Upload Files
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card-box">
+                                            <button type="button"
+                                                    class="btn btn-custom btn-rounded w-md waves-effect waves-light pull-right">
+                                                <i class="mdi mdi-upload"></i> Upload Files
+                                            </button>
+
+                                            <div class="row">
+
+                                                <div class="alert alert-info"><strong>Important!</strong>
+                                                    You can upload only two supporting documents. Only JPG,
+                                                    JPEG, PNG, GIF or PDF files are allowed.
+                                                </div>
+                                            </div>
+
+                                            <h4 class="header-title m-b-30">Supporting Documents</h4>
+
+                                            <div class="row">
+                                                <div class="col-lg-3 col-xl-2">
+                                                    <div class="file-man-box">
+                                                        <a href="" class="file-close"><i
+                                                                class="mdi mdi-close-circle"></i></a>
+                                                        <div class="file-img-box">
+                                                            <img src="assets/images/file_icons/pdf.svg" alt="icon">
+                                                        </div>
+                                                        <a href="#" class="file-download"><i class="mdi mdi-download"></i>
+                                                        </a>
+                                                        <div class="file-man-title">
+                                                            <h5 class="mb-0 text-overflow">invoice_project.pdf</h5>
+                                                            <p class="mb-0">
+                                                                <small>568.8 kb</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3 col-xl-2">
+                                                    <div class="file-man-box">
+                                                        <a href="" class="file-close"><i
+                                                                class="mdi mdi-close-circle"></i></a>
+                                                        <div class="file-img-box">
+                                                            <img src="assets/images/file_icons/bmp.svg" alt="icon">
+                                                        </div>
+                                                        <a href="#" class="file-download"><i class="mdi mdi-download"></i>
+                                                        </a>
+                                                        <div class="file-man-title">
+                                                            <h5 class="mb-0 text-overflow">Bmpfile.bmp</h5>
+                                                            <p class="mb-0">
+                                                                <small>845.8 mb</small>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="text-center mt-3">
+                                                <button type="button"
+                                                        class="btn btn-outline-danger w-md waves-effect waves-light"><i
+                                                        class="mdi mdi-refresh"></i> Load More Files
+                                                </button>
+                                            </div>
+
+                                        </div>
+
+
                                     </div>
-                                        <!-- end row -->
 
 
+
+
+
+                                    <!--<div class="row">-->
+
+                                            <!--<div class="alert alert-info"><strong>Important!</strong>-->
+                                                <!--You can upload only two supporting documents. Only JPG,-->
+                                                <!--JPEG, PNG, GIF or PDF files are allowed.-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+
+
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-lg-12">-->
+                                            <!--<div class="card-box">-->
+                                                <!--<h4 class="m-t-0 header-title">Add New Qualification</h4>-->
+                                                <!--<p class="text-muted m-b-30 font-13">-->
+                                                    <!--You may also swap <code class="highlighter-rouge">.row</code> for-->
+                                                    <!--<code class="highlighter-rouge">.form-row</code>, a variation of our-->
+                                                    <!--standard grid row that overrides the default column gutters for-->
+                                                    <!--tighter and more compact layouts.-->
+                                                <!--</p>-->
+
+                                                <!--<form>-->
+                                                    <!--<div class="form-row">-->
+                                                        <!--<div class="form-group col-md-6">-->
+                                                            <!--<label for="inputEmail4"-->
+                                                                   <!--class="col-form-label">Name</label>-->
+                                                            <!--<input type="email" class="form-control" id="inputEmail4"-->
+                                                                   <!--placeholder="Email">-->
+                                                            <!--<small class="form-text text-muted">-->
+                                                                <!--e.g:- B.Sc (Hons) Accounting-->
+                                                            <!--</small>-->
+                                                        <!--</div>-->
+                                                        <!--<div class="form-group col-md-6">-->
+                                                            <!--<label for="inputPassword4"-->
+                                                                   <!--class="col-form-label">Type</label>-->
+                                                            <!--<input type="password" class="form-control"-->
+                                                                   <!--id="inputPassword4" placeholder="Password">-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="form-group">-->
+                                                        <!--<label for="inputAddress" class="col-form-label">Awarded-->
+                                                            <!--Body / Institute</label>-->
+                                                        <!--<input type="text" class="form-control" id="inputAddress"-->
+                                                               <!--placeholder="1234 Main St">-->
+                                                        <!--<small class="form-text text-muted">-->
+                                                            <!--e.g:- the University of Greenwich-->
+                                                        <!--</small>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="form-row">-->
+                                                        <!--<div class="form-group col-md-6">-->
+                                                            <!--<label for="inputEmail4"-->
+                                                                   <!--class="col-form-label">Country</label>-->
+                                                            <!--<input type="email" class="form-control"-->
+                                                                   <!--placeholder="Email">-->
+
+                                                        <!--</div>-->
+                                                        <!--<div class="form-group col-md-6">-->
+                                                            <!--<label for="inputPassword4"-->
+                                                                   <!--class="col-form-label">Website</label>-->
+                                                            <!--<input type="password" class="form-control"-->
+                                                                    <!--placeholder="Password">-->
+                                                            <!--<small class="form-text text-muted">-->
+                                                                <!--e.g:- www.gre.ac.uk-->
+                                                            <!--</small>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+
+                                                    <!--<div class="form-row">-->
+                                                        <!--<div class="form-group col-md-6">-->
+                                                            <!--<label for="inputCity" class="col-form-label">Started Date</label>-->
+                                                            <!--<input type="text" class="form-control" id="inputCity">-->
+                                                        <!--</div>-->
+                                                        <!--<div class="form-group col-md-6">-->
+                                                            <!--<label for="inputState" class="col-form-label">Completed Date</label>-->
+                                                            <!--<select id="inputState" class="form-control">Choose</select>-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                    <!--<button type="submit" class="btn btn-primary">Save</button>-->
+                                                    <!--<button type="button"-->
+                                                            <!--class="btn btn-custom w-md waves-effect waves-light">-->
+                                                        <!--<i class="mdi mdi-upload"></i> Upload Files-->
+                                                    <!--</button>-->
+                                                <!--</form>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+
+
+                                    <!--<div class="card-box">-->
+                                        <!--<button type="button"-->
+                                                <!--class="btn btn-custom btn-rounded w-md waves-effect waves-light pull-right">-->
+                                            <!--<i class="mdi mdi-upload"></i> Upload Files-->
+                                        <!--</button>-->
 
                                         <!--<div class="row">-->
 
@@ -911,148 +1160,55 @@
                                             <!--</div>-->
                                         <!--</div>-->
 
+                                        <!--<h4 class="header-title m-b-30">Supporting Documents</h4>-->
 
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="card-box">
-                                                <h4 class="m-t-0 header-title">Add New Qualification</h4>
-                                                <p class="text-muted m-b-30 font-13">
-                                                    You may also swap <code class="highlighter-rouge">.row</code> for
-                                                    <code class="highlighter-rouge">.form-row</code>, a variation of our
-                                                    standard grid row that overrides the default column gutters for
-                                                    tighter and more compact layouts.
-                                                </p>
+                                        <!--<div class="row">-->
+                                            <!--<div class="col-lg-3 col-xl-2">-->
+                                                <!--<div class="file-man-box">-->
+                                                    <!--<a href="" class="file-close"><i-->
+                                                            <!--class="mdi mdi-close-circle"></i></a>-->
+                                                    <!--<div class="file-img-box">-->
+                                                        <!--<img src="assets/images/file_icons/pdf.svg" alt="icon">-->
+                                                    <!--</div>-->
+                                                    <!--<a href="#" class="file-download"><i class="mdi mdi-download"></i>-->
+                                                    <!--</a>-->
+                                                    <!--<div class="file-man-title">-->
+                                                        <!--<h5 class="mb-0 text-overflow">invoice_project.pdf</h5>-->
+                                                        <!--<p class="mb-0">-->
+                                                            <!--<small>568.8 kb</small>-->
+                                                        <!--</p>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
 
-                                                <form>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputEmail4"
-                                                                   class="col-form-label">Name</label>
-                                                            <input type="email" class="form-control" id="inputEmail4"
-                                                                   placeholder="Email">
-                                                            <small class="form-text text-muted">
-                                                                e.g:- B.Sc (Hons) Accounting
-                                                            </small>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPassword4"
-                                                                   class="col-form-label">Type</label>
-                                                            <input type="password" class="form-control"
-                                                                   id="inputPassword4" placeholder="Password">
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label for="inputAddress" class="col-form-label">Awarded
-                                                            Body / Institute</label>
-                                                        <input type="text" class="form-control" id="inputAddress"
-                                                               placeholder="1234 Main St">
-                                                        <small class="form-text text-muted">
-                                                            e.g:- the University of Greenwich
-                                                        </small>
-                                                    </div>
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputEmail4"
-                                                                   class="col-form-label">Country</label>
-                                                            <input type="email" class="form-control"
-                                                                   placeholder="Email">
+                                            <!--<div class="col-lg-3 col-xl-2">-->
+                                                <!--<div class="file-man-box">-->
+                                                    <!--<a href="" class="file-close"><i-->
+                                                            <!--class="mdi mdi-close-circle"></i></a>-->
+                                                    <!--<div class="file-img-box">-->
+                                                        <!--<img src="assets/images/file_icons/bmp.svg" alt="icon">-->
+                                                    <!--</div>-->
+                                                    <!--<a href="#" class="file-download"><i class="mdi mdi-download"></i>-->
+                                                    <!--</a>-->
+                                                    <!--<div class="file-man-title">-->
+                                                        <!--<h5 class="mb-0 text-overflow">Bmpfile.bmp</h5>-->
+                                                        <!--<p class="mb-0">-->
+                                                            <!--<small>845.8 mb</small>-->
+                                                        <!--</p>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
 
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputPassword4"
-                                                                   class="col-form-label">Website</label>
-                                                            <input type="password" class="form-control"
-                                                                    placeholder="Password">
-                                                            <small class="form-text text-muted">
-                                                                e.g:- www.gre.ac.uk
-                                                            </small>
-                                                        </div>
-                                                    </div>
+                                        <!--</div>-->
 
-                                                    <div class="form-row">
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputCity" class="col-form-label">Started Date</label>
-                                                            <input type="text" class="form-control" id="inputCity">
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label for="inputState" class="col-form-label">Completed Date</label>
-                                                            <select id="inputState" class="form-control">Choose</select>
-                                                        </div>
-                                                    </div>
-                                                    <button type="submit" class="btn btn-primary">Save</button>
-                                                    <button type="button"
-                                                            class="btn btn-custom w-md waves-effect waves-light">
-                                                        <i class="mdi mdi-upload"></i> Upload Files
-                                                    </button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <!--<div class="text-center mt-3">-->
+                                            <!--<button type="button"-->
+                                                    <!--class="btn btn-outline-danger w-md waves-effect waves-light"><i-->
+                                                    <!--class="mdi mdi-refresh"></i> Load More Files-->
+                                            <!--</button>-->
+                                        <!--</div>-->
 
-
-                                    <div class="card-box">
-                                        <button type="button"
-                                                class="btn btn-custom btn-rounded w-md waves-effect waves-light pull-right">
-                                            <i class="mdi mdi-upload"></i> Upload Files
-                                        </button>
-
-                                        <div class="row">
-
-                                            <div class="alert alert-info"><strong>Important!</strong>
-                                                You can upload only two supporting documents. Only JPG,
-                                                JPEG, PNG, GIF or PDF files are allowed.
-                                            </div>
-                                        </div>
-
-                                        <h4 class="header-title m-b-30">Supporting Documents</h4>
-
-                                        <div class="row">
-                                            <div class="col-lg-3 col-xl-2">
-                                                <div class="file-man-box">
-                                                    <a href="" class="file-close"><i
-                                                            class="mdi mdi-close-circle"></i></a>
-                                                    <div class="file-img-box">
-                                                        <img src="assets/images/file_icons/pdf.svg" alt="icon">
-                                                    </div>
-                                                    <a href="#" class="file-download"><i class="mdi mdi-download"></i>
-                                                    </a>
-                                                    <div class="file-man-title">
-                                                        <h5 class="mb-0 text-overflow">invoice_project.pdf</h5>
-                                                        <p class="mb-0">
-                                                            <small>568.8 kb</small>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-3 col-xl-2">
-                                                <div class="file-man-box">
-                                                    <a href="" class="file-close"><i
-                                                            class="mdi mdi-close-circle"></i></a>
-                                                    <div class="file-img-box">
-                                                        <img src="assets/images/file_icons/bmp.svg" alt="icon">
-                                                    </div>
-                                                    <a href="#" class="file-download"><i class="mdi mdi-download"></i>
-                                                    </a>
-                                                    <div class="file-man-title">
-                                                        <h5 class="mb-0 text-overflow">Bmpfile.bmp</h5>
-                                                        <p class="mb-0">
-                                                            <small>845.8 mb</small>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="text-center mt-3">
-                                            <button type="button"
-                                                    class="btn btn-outline-danger w-md waves-effect waves-light"><i
-                                                    class="mdi mdi-refresh"></i> Load More Files
-                                            </button>
-                                        </div>
-
-                                    </div>
+                                    <!--</div>-->
 
 
                                 </div>
@@ -1063,14 +1219,14 @@
                                 <div class="tab-pane" id="work-experience-details">
                                     <div class="card-box">
 
-                                        <div class="row">
-                                            <div class="form-group text-center m-b-0" style="padding: 30px;">
-                                                <button class="btn btn-primary waves-effect waves-light"
-                                                        type="button">
-                                                    Add New
-                                                </button>
-                                            </div>
-                                        </div>
+                                        <!--<div class="row">-->
+                                            <!--<div class="form-group text-center m-b-0" style="padding: 30px;">-->
+                                                <!--<button class="btn btn-primary waves-effect waves-light"-->
+                                                        <!--type="button">-->
+                                                    <!--Add New-->
+                                                <!--</button>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
 
                                         <div class="row">
 
@@ -1155,8 +1311,19 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!--end of row-->
+
+                                        <div class="row">
+                                            <div class="form-group text-center m-b-0">
+                                                <button class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#signup-modal"
+                                                        type="button">
+                                                    <i class="mdi mdi-plus"></i>
+                                                    Add New Category
+                                                </button>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <!-- end row -->
 
 
 
@@ -1350,7 +1517,7 @@
                                     </div><!-- end row -->
 
                                     <div class="row">
-                                        <div class="form-group text-center m-b-0" style="padding-left:30px;padding-top: 20px;padding-bottom: 20px;">
+                                        <div class="form-group text-center m-b-0">
                                             <button class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target="#signup-modal"
                                                     type="button">
                                                 <i class="mdi mdi-plus"></i>
