@@ -1666,50 +1666,184 @@
                                     <div class="card-box">
                                         <div class="row">
                                             <div class="col-12">
-                                                <div class="p-20">
-                                                    <form class="form-horizontal" role="form">
+                                                <div class="card-box table-responsive">
+                                                    <h4 class="m-t-0 header-title">Dependents</h4>
+                                                    <p class="text-muted font-14 m-b-30">
+                                                        The list of languages
+                                                    </p>
 
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">First Name</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Last Name</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Nationality</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Birth Date</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
+                                                    <table id="datatable-buttons"
+                                                           class="table table-striped table-bordered" cellspacing="0"
+                                                           width="100%">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Position</th>
+                                                            <th>Office</th>
+                                                            <th>Age</th>
+                                                            <th>Start date</th>
+                                                            <th>Salary</th>
+                                                        </tr>
+                                                        </thead>
 
 
-                                                        <div class="form-group text-center m-b-0">
-                                                            <button class="btn btn-custom waves-effect waves-light"
-                                                                    type="submit">
-                                                                Save
-                                                            </button>
-                                                        </div>
-                                                    </form>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>Tiger Nixon</td>
+                                                            <td>System Architect</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>61</td>
+                                                            <td>2011/04/25</td>
+                                                            <td>
+                                                                <div class="btn-group dropdown">
+                                                                    <a href="javascript: void(0);"
+                                                                       class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-sm"
+                                                                       data-toggle="dropdown" aria-expanded="false">Click
+                                                                        Here</i></a>
+                                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-pencil mr-2 text-muted font-18 vertical-middle"></i>Edit
+                                                                            Ticket</a>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-check-all mr-2 text-muted font-18 vertical-middle"></i>Close</a>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-delete mr-2 text-muted font-18 vertical-middle"></i>Remove</a>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-star mr-2 font-18 text-muted vertical-middle"></i>Mark
+                                                                            as Unread</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Garrett Winters</td>
+                                                            <td>Accountant</td>
+                                                            <td>Tokyo</td>
+                                                            <td>63</td>
+                                                            <td>2011/07/25</td>
+                                                            <td>$170,750</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ashton Cox</td>
+                                                            <td>Junior Technical Author</td>
+                                                            <td>San Francisco</td>
+                                                            <td>66</td>
+                                                            <td>2009/01/12</td>
+                                                            <td>$86,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cedric Kelly</td>
+                                                            <td>Senior Javascript Developer</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>22</td>
+                                                            <td>2012/03/29</td>
+                                                            <td>$433,060</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+
+
                                                 </div>
                                             </div>
 
                                         </div>
                                         <!-- end row -->
+
+                                        <div class="row">
+                                            <div class="form-group text-center m-b-0">
+                                                <button class="btn btn-primary waves-effect waves-light"
+                                                        data-toggle="modal" data-target="#add-dependents-modal"
+                                                        type="button">
+                                                    <i class="mdi mdi-plus"></i>
+                                                    Add Language
+                                                </button>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- start popup/modal for adding dependents -->
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card-box">
+                                                    <!-- Signup modal content -->
+                                                    <div id="add-dependents-modal" class="modal fade" tabindex="-1"
+                                                         role="dialog" aria-labelledby="custom-width-modalLabel"
+                                                         aria-hidden="true" style="display: none;">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body">
+                                                                    <h2 class="text-uppercase text-center m-b-30">
+                                                                        <a href="index.html" class="text-success">
+                                                                            <span><img src="assets/images/logo.png"
+                                                                                       alt="" height="28"></span>
+                                                                        </a>
+                                                                    </h2>
+
+
+                                                                    <form class="form-horizontal" action="#">
+
+                                                                        <div class="form-group m-b-25">
+                                                                            <div class="col-12">
+                                                                                <label for="username">Name</label>
+                                                                                <input class="form-control" type="email"
+                                                                                       id="username" required=""
+                                                                                       placeholder="Michael Zenaty">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group m-b-25">
+                                                                            <div class="col-12">
+                                                                                <label for="emailaddress">Email
+                                                                                    address</label>
+                                                                                <input class="form-control" type="email"
+                                                                                       id="emailaddress" required=""
+                                                                                       placeholder="john@deo.com">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group m-b-25">
+                                                                            <div class="col-12">
+                                                                                <label for="password">Password</label>
+                                                                                <input class="form-control"
+                                                                                       type="password" required=""
+                                                                                       id="password"
+                                                                                       placeholder="Enter your password">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group m-b-20">
+                                                                            <div class="col-12">
+                                                                                <div class="checkbox checkbox-custom">
+                                                                                    <input id="checkbox11"
+                                                                                           type="checkbox" checked>
+                                                                                    <label for="checkbox11">
+                                                                                        I accept <a href="#">Terms and
+                                                                                        Conditions</a>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group account-btn text-center m-t-10">
+                                                                            <div class="col-12">
+                                                                                <button class="btn w-lg btn-rounded btn-primary waves-effect waves-light"
+                                                                                        type="submit">Sign Up Free
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </form>
+
+
+                                                                </div>
+                                                            </div><!-- /.modal-content -->
+                                                        </div><!-- /.modal-dialog -->
+                                                    </div><!-- /.modal -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ends popup/modal for adding dependents-->
 
                                     </div> <!-- end card-box -->
                                 </div>
@@ -1721,50 +1855,184 @@
                                     <div class="card-box">
                                         <div class="row">
                                             <div class="col-12">
-                                                <div class="p-20">
-                                                    <form class="form-horizontal" role="form">
+                                                <div class="card-box table-responsive">
+                                                    <h4 class="m-t-0 header-title">Emergency Contacts</h4>
+                                                    <p class="text-muted font-14 m-b-30">
+                                                        The list of languages
+                                                    </p>
 
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">First Name</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Last Name</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Nationality</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="form-group row">
-                                                            <label class="col-2 col-form-label">Birth Date</label>
-                                                            <div class="col-10">
-                                                                <input type="text" class="form-control">
-                                                            </div>
-                                                        </div>
+                                                    <table id="datatable-buttons"
+                                                           class="table table-striped table-bordered" cellspacing="0"
+                                                           width="100%">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Position</th>
+                                                            <th>Office</th>
+                                                            <th>Age</th>
+                                                            <th>Start date</th>
+                                                            <th>Salary</th>
+                                                        </tr>
+                                                        </thead>
 
 
-                                                        <div class="form-group text-center m-b-0">
-                                                            <button class="btn btn-custom waves-effect waves-light"
-                                                                    type="submit">
-                                                                Save
-                                                            </button>
-                                                        </div>
-                                                    </form>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td>Tiger Nixon</td>
+                                                            <td>System Architect</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>61</td>
+                                                            <td>2011/04/25</td>
+                                                            <td>
+                                                                <div class="btn-group dropdown">
+                                                                    <a href="javascript: void(0);"
+                                                                       class="table-action-btn dropdown-toggle arrow-none btn btn-light btn-sm"
+                                                                       data-toggle="dropdown" aria-expanded="false">Click
+                                                                        Here</i></a>
+                                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-pencil mr-2 text-muted font-18 vertical-middle"></i>Edit
+                                                                            Ticket</a>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-check-all mr-2 text-muted font-18 vertical-middle"></i>Close</a>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-delete mr-2 text-muted font-18 vertical-middle"></i>Remove</a>
+                                                                        <a class="dropdown-item" href="#"><i
+                                                                                class="mdi mdi-star mr-2 font-18 text-muted vertical-middle"></i>Mark
+                                                                            as Unread</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Garrett Winters</td>
+                                                            <td>Accountant</td>
+                                                            <td>Tokyo</td>
+                                                            <td>63</td>
+                                                            <td>2011/07/25</td>
+                                                            <td>$170,750</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Ashton Cox</td>
+                                                            <td>Junior Technical Author</td>
+                                                            <td>San Francisco</td>
+                                                            <td>66</td>
+                                                            <td>2009/01/12</td>
+                                                            <td>$86,000</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Cedric Kelly</td>
+                                                            <td>Senior Javascript Developer</td>
+                                                            <td>Edinburgh</td>
+                                                            <td>22</td>
+                                                            <td>2012/03/29</td>
+                                                            <td>$433,060</td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+
+
                                                 </div>
                                             </div>
 
                                         </div>
                                         <!-- end row -->
+
+                                        <div class="row">
+                                            <div class="form-group text-center m-b-0">
+                                                <button class="btn btn-primary waves-effect waves-light"
+                                                        data-toggle="modal" data-target="#add-emergency-contact-modal"
+                                                        type="button">
+                                                    <i class="mdi mdi-plus"></i>
+                                                    Add Language
+                                                </button>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- start popup/modal for addign emergency contact -->
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card-box">
+                                                    <!-- Signup modal content -->
+                                                    <div id="add-emergency-contact-modal" class="modal fade" tabindex="-1"
+                                                         role="dialog" aria-labelledby="custom-width-modalLabel"
+                                                         aria-hidden="true" style="display: none;">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body">
+                                                                    <h2 class="text-uppercase text-center m-b-30">
+                                                                        <a href="index.html" class="text-success">
+                                                                            <span><img src="assets/images/logo.png"
+                                                                                       alt="" height="28"></span>
+                                                                        </a>
+                                                                    </h2>
+
+
+                                                                    <form class="form-horizontal" action="#">
+
+                                                                        <div class="form-group m-b-25">
+                                                                            <div class="col-12">
+                                                                                <label for="username">Name</label>
+                                                                                <input class="form-control" type="email"
+                                                                                       id="username" required=""
+                                                                                       placeholder="Michael Zenaty">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group m-b-25">
+                                                                            <div class="col-12">
+                                                                                <label for="emailaddress">Email
+                                                                                    address</label>
+                                                                                <input class="form-control" type="email"
+                                                                                       id="emailaddress" required=""
+                                                                                       placeholder="john@deo.com">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group m-b-25">
+                                                                            <div class="col-12">
+                                                                                <label for="password">Password</label>
+                                                                                <input class="form-control"
+                                                                                       type="password" required=""
+                                                                                       id="password"
+                                                                                       placeholder="Enter your password">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group m-b-20">
+                                                                            <div class="col-12">
+                                                                                <div class="checkbox checkbox-custom">
+                                                                                    <input id="checkbox11"
+                                                                                           type="checkbox" checked>
+                                                                                    <label for="checkbox11">
+                                                                                        I accept <a href="#">Terms and
+                                                                                        Conditions</a>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group account-btn text-center m-t-10">
+                                                                            <div class="col-12">
+                                                                                <button class="btn w-lg btn-rounded btn-primary waves-effect waves-light"
+                                                                                        type="submit">Sign Up Free
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </form>
+
+
+                                                                </div>
+                                                            </div><!-- /.modal-content -->
+                                                        </div><!-- /.modal-dialog -->
+                                                    </div><!-- /.modal -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- ends popup/modal for emergency contact-->
 
                                     </div> <!-- end card-box -->
                                 </div>
