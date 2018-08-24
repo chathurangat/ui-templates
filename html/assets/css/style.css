@@ -1583,8 +1583,16 @@ code {
 }
 
 .card-header, .card-footer {
-  background-color: #e3eaef;
+  /*background-color: #e3eaef;*/
+  /*border-bottom-color: #d3dee6;*/
+
+  background-color: #f3f6f8;
   border-bottom-color: #d3dee6;
+}
+
+.personal-information-accordian{
+  background-color: #f3f6f8;
+  border-bottom-color: #f3f6f8;
 }
 
 .card-footer {
